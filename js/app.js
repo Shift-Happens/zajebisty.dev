@@ -21,8 +21,8 @@ class AffirmationApp {
         try {
             await this.loadAffirmations();
             this.setupEventListeners();
-            this.showRandomAffirmation();
             this.isLoading = false;
+            this.showRandomAffirmation();
         } catch (error) {
             console.error('Error initializing app:', error);
             this.showError();
